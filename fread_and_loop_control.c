@@ -58,4 +58,14 @@ int main(void){
 					// so he will read nothing in the second time and he will return 0 = NULL and make the loop stop
 		printf("fscanf test: %s\n",arr5);
 	}
+	puts("=============================");
+	int b = ftell(fp);
+	fseek(fp,0,SEEK_SET);
+	int a = ftell(fp); //ftell will return the current position of the pointer
+	printf("position before fseek = %d\nposition after fseek: %d\n",b,a);
+	puts("=============================");
+	a = fread(arr5,1,1000,fp);
+	printf("number of read characters: %d\n",a);
+	printf("test fread: %s",arr5);
+	
 }
