@@ -1,9 +1,9 @@
-
 /*inside text.txt:
 string1 1234
 string2 this is remainders
 string3 this is line 3
 */
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
