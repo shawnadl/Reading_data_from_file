@@ -45,7 +45,7 @@ int main(void){
 	
 	puts("=============================");
 	while((fscanf(fp,"%[^\n]%*c",arr5)) != EOF){//fscanf will read all data until seeing '\n', pointer will skip this character
-						   //because of %*c, then while-loop will check if the return of scanf is EOF is not
+						   //because of %*c, then while-loop will check if the return of scanf is EOF or not
 						   //if it is not EOF, continue reading data. When pointer points to the end of file
 						   //There is nothing to read so fscanf will return EOF
 						   //Note that EOF will only be returned when there is nothing to read, as when the pointer
