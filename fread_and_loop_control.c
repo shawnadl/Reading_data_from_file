@@ -1,13 +1,8 @@
-/*inside text.txt:
-string1 1234
-string2 this is remainders
-string3 this is line 3
-*/
-
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
 #define LEN 1024
+
 int main(void){
 	FILE* fp = fopen("C:\\Users\\Administrator\\Desktop\\test.txt","r");
 	char arr1[LEN];
